@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -45,13 +45,11 @@
     "            return true\n",
     "        return false\n",
     "    \n",
-    "    def __ne__(self, other):\n",
-    "        if self.real != other.real and self.image != other.image:\n",
-    "            return true\n",
-    "        return false\n",
-    "    \n",
     "    def __radd__(self, other):\n",
-    "        return Complex(other.real + self.real, other.image + self.image)"
+    "        return Complex(other.real + self.real, other.image + self.image)\n",
+    "    \n",
+    "def intoComplex(x):\n",
+    "    return complex(x, 0)\n"
    ]
   },
   {
