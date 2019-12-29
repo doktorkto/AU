@@ -74,14 +74,15 @@ class Complex():
 class CTC(unittest.TestCase): #ComplexTestCase
 
     def test_add(self):
-        c1 = Complex(1, 12)
-        c2 = Complex(3,5)
-        self.assertEqual(c1 + c2, Complex(4, 17))
+        c2 = random.randint(-100, 100)
+        c3 = random.randint(-100, 100)
+        c4 = random.randint(-100, 100)
+        self.assertEqual(Complex(c1, c2) + Complex(c3, c4), Complex(c1 + c3, c2 + c4))
         
     def test_equal(self):
-        c1 = Complex(1, 12)
-        c2 = Complex(1, 12)
-        self.assertTrue(c1 == c2)
+        c1 = random.randint(-100, 100)
+        c2 = random.randint(-100, 100)
+        self.assertTrue(Complex(c1, c2) == Complex(c1, c2))
 
     def test_power(self):
         h1 = Complex(1, 5)
