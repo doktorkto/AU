@@ -12,6 +12,8 @@ def gauss_method(a: np.array, b: np.array, n):
         for j in range(0, n):
             print(a[j])
         print('  ')
+        print(b)
+        print('  ')
     return b
 
 s = np.array([[1.0, 0.0 , 1.0], [0.0, 1.0, -1.0], [1.0, 1.0, 1.0]], float)
