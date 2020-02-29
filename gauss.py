@@ -7,8 +7,8 @@ def gauss_method(a: np.array, b: np.array, n):
    
         for j in range(0, n):
             if j != i:
-                a[j] -= a[i] * a[j, i]
                 b[j] -= b[i] * a[j, i]
+                a[j] -= a[i] * a[j, i]
         for j in range(0, n):
             print(a[j])
         print('  ')
