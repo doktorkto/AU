@@ -2,8 +2,8 @@ import numpy as np
 
 def gauss_method(a: np.array, b: np.array, n):
     for i in range(0, n):
-        a[i] /= a[i, i]
         b[i] /= a[i, i]
+        a[i] /= a[i, i]
    
         for j in range(0, n):
             if j != i:
