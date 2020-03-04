@@ -1,5 +1,5 @@
 import numpy as np
-from numba import njit, prange
+from numba import njit
 
 s = np.array([[2.0, 1.0 , 1.0], [4.0, 1.0, 1.0], [2.0, 1.0, -1.0]], float)
 k = np.array([2.0, 6.0, 4.0], float)
