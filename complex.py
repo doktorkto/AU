@@ -2,7 +2,7 @@ import math
 import unittest
 import random
 """
-Complex numbers
+Complex numbers.
 """
 
 class Complex():
