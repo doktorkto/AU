@@ -4,9 +4,9 @@
 import math
 import numpy
 import matplotlib.pyplot as mpp
-"""
-Здесь загружаются необходимые для программы модули.
-"""
+
+#Здесь загружаются необходимые для программы модули.
+
 
 
 if __name__=='__main__':
